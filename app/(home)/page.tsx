@@ -41,29 +41,30 @@ const Home = () => {
     <>
       <Suspense>
         {loading && <LoaderFullscreen />}
-        <div className="w-full">
-          <Header />
-          <Slider />
-          <Search />
-          <div
-            className="mx-auto"
-            style={{
-              width: "90%",
-              height: "1px",
-              backgroundColor: " rgba(0, 0, 0, 0.1)",
-            }}
-          ></div>
-          <Section3 />
-          <NewProducts vehicles={latestVehicles} />
-          {/* <div className="w-full h-20" ></div> */}
-          <Section2 />
-{/* 
+        {!loading &&
+          <div className="w-full">
+            <Header />
+            <Slider />
+            <Search />
+            <div
+              className="mx-auto"
+              style={{
+                width: "90%",
+                height: "1px",
+                backgroundColor: " rgba(0, 0, 0, 0.1)",
+              }}
+            ></div>
+            <Section3 />
+            <NewProducts vehicles={latestVehicles} />
+            {/* <div className="w-full h-20" ></div> */}
+            <Section2 />
+            {/* 
           <div className="w-full h-20"></div> */}
 
-          <ContactForm/>
+            <ContactForm />
 
-          <Footer />
-        </div>
+            <Footer />
+          </div>}
       </Suspense>
     </>
   );
