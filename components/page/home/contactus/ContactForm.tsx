@@ -45,7 +45,7 @@ import Footer from "../Footer";
 const ContactForm = () => {
   const [branches, setBranches] = useState<IBranch[]>();
   const [loading, setLoading] = useState(false);
-  const [loadingPage, setLoadingPage] = useState(true);
+  const [loadingPage, setLoadingPage] = useState(false);
   const [openCreatedLead, setOpenCreatedLead] = useState(false);
   const { toast } = useToast();
 
@@ -94,7 +94,7 @@ const ContactForm = () => {
   }
 
   useEffect(() => {
-    getBranches();
+    //getBranches();
   }, []);
 
   return (
