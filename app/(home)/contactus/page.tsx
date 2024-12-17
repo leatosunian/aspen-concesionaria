@@ -1,13 +1,12 @@
 import Header from "@/components/page/Header";
 import ContactForm from "@/components/page/home/contactus/ContactForm";
-import Footer from "@/components/page/home/Footer";
 import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
   title: "Contactanos | Aspen Automotores",
   description:
-    "Aspen Automotores, concesionaria de vehículos ubicada en Mar del Plata, Buenos Aires",
+    "Aspen Automotores, concesionaria de vehículos ubicada en Córdoba",
 };
 
 const ContactUs = () => {
